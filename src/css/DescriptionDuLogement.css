@@ -1,0 +1,133 @@
+.logement {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titre_du_logement {
+  color: #ff6060;
+  font-size: 34px;
+  line-height: 147%;
+}
+
+.location_du_logement {
+  color: #ff6060;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+.etiquettes_des_logements {
+  display: flex;
+  padding: 0;
+}
+
+.etiquette_de_logement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 13px;
+  font-size: 12px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  padding: 0 12px;
+  height: 23px;
+  width: 100px;
+}
+
+.hote_du_logement {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nom_du_hote_du_logement {
+  color: #ff6060;
+  font-size: 16px;
+  line-height: 143%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  width: 89px;
+  height: 48px;
+}
+
+.image_du_hote_du_logement img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-left: 8px;
+}
+
+.score_du_logement {
+  margin-top: 8px;
+}
+
+.evaluation_du_logement {
+  width: 28px;
+  height: 28px;
+  padding: 0 8px 0 0;
+}
+
+
+@media (max-width: 812px) {
+  .logement {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .annexe_du_description_du_logement {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 13px;
+  }
+
+  .titre_du_logement {
+    font-size: 16px;
+  }
+
+  .location_du_logement {
+    font-size: 12px;
+  }
+
+  .etiquettes_des_logements {
+    flex-wrap: wrap;
+  }
+
+  .etiquette_de_logement {
+    border-radius: 4px;
+    width: auto;
+    height: 16px;
+    margin-top: 3px;
+    font-size: 8px;
+    width: 50px;
+  }
+
+  .hote_du_logement {
+    font-size: 8px;
+    width: 80px;
+    height: 16px;
+  }
+
+  .nom_du_hote_du_logement {
+    font-size: 10px;
+    width: 59px;
+    height: 31px;
+  }
+
+  .image_du_hote_du_logement img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .evaluation_du_logement {
+    width: 13px;
+    height: 13px;
+    padding-right: 4px;
+  }
+}

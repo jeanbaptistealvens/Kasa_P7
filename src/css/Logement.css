@@ -1,0 +1,44 @@
+
+.panneau_deroulant_du_logement {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-left: 2%;
+  margin-right: 3%;
+}
+
+.element_panneau_deroulant_du_logement {
+  width: 100%;
+  padding: 0;
+}
+
+.element_panneau_deroulant_du_logement p {
+  padding: 28px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.element_panneau_deroulant_du_logement span {
+  list-style: none;
+}
+
+.equipement_du_logement {
+  list-style: none;
+}
+
+@media (max-width: 812px) {
+  .panneau_deroulant_du_logement {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .element_panneau_deroulant_du_logement p {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .element_panneau_deroulant_du_logement span {
+    font-size: 11px;
+  }
+}

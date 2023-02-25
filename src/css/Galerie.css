@@ -1,0 +1,107 @@
+.galerie {
+  position: relative;
+  width: 85%;
+  height: 413px;
+  margin: auto;
+  margin-bottom: 28px;
+}
+
+.image_de_la_galerie {
+  width: 100%;
+  height: 413px;
+  border-radius: 23px;
+}
+
+.image_de_la_galerie img {
+  width: 100%;
+  height: 413px;
+  object-fit: cover;
+  border-radius: 23px;
+}
+
+.fleche_a_gauche {
+  position: absolute;
+  left: 15px;
+  top: 40%;
+  cursor: pointer;
+}
+
+.fleche_a_droite {
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  cursor: pointer;
+}
+
+.fleche_cacher {
+  opacity: 0;
+}
+
+.numero_de_la_galerie {
+  position: absolute;
+  font-size: 21px;
+  left: 50%;
+  bottom: 7%;
+}
+
+.numero_de_la_galerie_cacher {
+  opacity: 0;
+}
+
+@media (min-width: 431px) and (max-width: 812px) {
+  .galerie {
+    height: 288px;
+  }
+  .image_de_la_galerie {
+    height: 288px;
+  }
+
+  .image_de_la_galerie img  {
+    height: 288px;
+    border-radius: 10px;
+  }
+  .fleche_a_gauche {
+    position: absolute;
+    left: 7px;
+    top: 45%;
+    width: 6%;
+  }
+
+  .fleche_a_droite {
+    position: absolute;
+    right: 5px;
+    top: 45%;
+    width: 6%;
+  }
+}
+
+@media (max-width: 430px) {
+  .galerie {
+    height: 253px;
+  }
+  .image_de_la_galerie {
+    height: 267px;
+    border-radius: 10px;
+  }
+
+  .image_de_la_galerie img {
+    height: 267px;
+    border-radius: 10px;
+  }
+  .fleche_a_gauche { 
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width: 5%
+  }
+
+  .fleche_a_droite {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 5%
+  }
+  .numero_de_la_galerie {
+    opacity: 0;
+  }
+}
